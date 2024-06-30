@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+
+    <!--A Supprimmer-->
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+    <!--A Supprimmer-->
+
+</head>
+<body>
+    <header>
+        <h1>My Content</h1>
+    </header>
+    <main>
+        <div class="main" id="intro-container">
+            <h2 class="intro-title">Application de recommandation</h2>
+            <div class="intro-text">
+                Cette application a pour objectif de recommander des articles aux utilisateurs en fonction de leurs précédentes lectures.
+            </div>
+        </div>
+
+        <div class="dropdown-predict">
+            <h3 class="main-paragraph-title">
+                Sélectionner un utilisateurs dans le menu déroulant.
+            </h3>
+            <select id="options">
+              <option value="0">DUPONT Marie - #1000</option>
+              <option value="1">LEROY Thomas - #1001</option>
+              <option value="2">MARTIN Claire - #1002</option>
+              <option value="3">BERNARD Jean - #1003</option>
+              <option value="4">ROUSSEAU Sophie - #1004</option>
+              <option value="5">DURAND Paul - #1005</option>
+              <option value="6">MOREAU Camille - #1006</option>
+              <option value="7">PETIT Antoine - #1007</option>
+              <option value="8">LAMBERT Julie - #1008</option>
+              <option value="0">ROBIN Nicolas - #1009</option>
+            </select>
+            <button class="button_dropdown" id="submitBtn" onclick="predict_sentiment()">Recommander</button>
+            <div id="result"></div>
+        </div>
+
+        <div id="container"></div>
+
+          <footer>
+            <p>Tous droits réservés haDock404</p>
+        </footer>
+    </main>
+</body>
+</html>
